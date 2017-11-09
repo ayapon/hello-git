@@ -1,0 +1,171 @@
+<?php
+/**
+ * @package Welcart
+ * @subpackage Welcart_Basic
+ */
+
+$division = welcart_basic_get_item_division( $post->ID );
+switch( $division ) :
+case 'data':
+	get_template_part( 'wc_templates/wc_item_single_data', get_post_format() );
+	break;
+case 'service':
+	get_template_part( 'wc_templates/wc_item_single_service', get_post_format() );
+	break;
+default://shipped
+
+get_header();
+?>
+
+<section class="container spacer">
+<div id="primary" class="site-content">
+	<div id="content" role="main">
+
+	<?php if( have_posts() ) : the_post(); ?>
+
+		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+<!--				<h1 class="item_page_title"><?php the_title(); ?></h1>-->
+
+			<div class="storycontent">
+
+			<?php usces_remove_filter(); ?>
+			<?php usces_the_item(); ?>
+			<?php usces_have_skus(); ?>
+
+				<div id="itempage">
+
+								<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku('return') ); ?></div>
+
+					<div id="img-box">
+
+						<div class="itemimg">
+							<a href="<?php usces_the_itemImageURL(0); ?>" <?php echo apply_filters( 'usces_itemimg_anchor_rel', NULL ); ?>><?php usces_the_itemImage( 0, 335, 335, $post ); ?></a>
+						</div>
+
+						<?php
+						$imageid = usces_get_itemSubImageNums();
+						if( !empty( $imageid ) ):
+						?>
+						<div class="itemsubimg">
+						<?php foreach( $imageid as $id ) : ?>
+							<a href="<?php usces_the_itemImageURL($id); ?>" <?php echo apply_filters( 'usces_itemimg_anchor_rel', NULL ); ?>><?php usces_the_itemImage( $id, 135, 135, $post ); ?></a>
+						<?php endforeach; ?>
+						</div>
+						<?php endif; ?>
+
+					</div><!-- #img-box -->
+
+					<div class="detail-box">
+						<h2 class="item-name"><?php usces_the_itemName(); ?></h2>
+
+						<?php welcart_basic_campaign_message(); ?>
+						<div class="item-description">
+							<?php the_content(); ?>
+						<div class="clear"></div>
+						</div>
+
+						<?php if( 'continue' == welcart_basic_get_item_chargingtype( $post->ID ) ) : ?>
+						<!-- Charging Type Continue shipped -->
+						<div class="field">
+							<table class="dlseller">
+								<tr><th><?php _e('First Withdrawal Date', 'dlseller'); ?></th><td><?php echo dlseller_first_charging( $post->ID ); ?></td></tr>
+								<?php if( 0 < (int)$usces_item['dlseller_interval'] ) : ?>
+								<tr><th><?php _e('Contract Period', 'dlseller'); ?></th><td><?php echo $usces_item['dlseller_interval']; ?><?php _e('month (Automatic Updates)', 'welcart_basic'); ?></td></tr>
+								<?php endif; ?>
+							</table>
+						</div>
+						<?php endif; ?>
+					</div><!-- .detail-box -->
+
+					<div class="item-info">
+
+						<?php if( $item_custom = usces_get_item_custom( $post->ID, 'list', 'return' ) ) : ?>
+							<?php echo $item_custom; ?>
+						<?php endif; ?>
+
+						<form action="<?php echo USCES_CART_URL; ?>" method="post">
+
+						<?php do { ?>
+							<div class="skuform">
+								<?php if( '' !== usces_the_itemSkuDisp('return') ) : ?>
+								<div class="skuname"><?php usces_the_itemSkuDisp(); ?></div>
+								<?php endif; ?>
+
+<?php if(in_category(7)) : ?>
+<h4><strong>ご利用店舗名とご希望のショップIDをご入力ください</strong></h4>
+<span class="caption"><strong>ショップIDとは</strong>、WebアプリのURL「https://nightworks.jp/◯◯◯◯」の◯の部分になります。<br />
+ご利用いただける文字は<strong>半角英数4字以上</strong>で、記号は「 - 」「 _ 」「 . 」のみお使いいただけます。(スペースは使えません)<br />
+未入力の場合は当社で指定させていただきます。また、ご希望がすでに他のお客様で使用済みの場合、及びURLとして不具合のある場合は、弊社にご一任いただきますことをご了承ください。<br />
+正式なショップIDは、アカウントのご利用準備が整い次第、あらためてご案内させていただきます。</span><br />
+<br />
+<?php endif; ?>
+
+								<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku('return') ); ?></div>
+
+								<?php if( usces_is_options() ) : ?>
+								<dl class="item-option">
+									<?php while( usces_have_options() ) : ?>
+									<dt><?php usces_the_itemOptName(); ?></dt>
+									<dd><?php usces_the_itemOption( usces_getItemOptName(), '' ); ?></dd>
+									<?php endwhile; ?>
+								</dl>
+								<?php endif; ?>
+
+								<?php usces_the_itemGpExp(); ?>
+
+								<div class="field">
+
+									<?php if( 'continue' == welcart_basic_get_item_chargingtype( $post->ID ) ) : ?>
+									<div class="frequency"><span class="field_frequency"><?php dlseller_frequency_name($post->ID, 'amount'); ?></span></div>
+									<?php endif; ?>
+
+									<div class="field_price">
+									<?php if( usces_the_itemCprice('return') > 0 ) : ?>
+										<span class="field_cprice"><?php usces_the_itemCpriceCr(); ?></span>
+									<?php endif; ?>
+										<?php usces_the_itemPriceCr(); ?><?php usces_guid_tax(); ?><span class="permonth">/月</span>
+									</div>
+								</div>
+
+								<?php if( !usces_have_zaiko() ) : ?>
+								<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
+								<?php else : ?>
+								<div class="c-box">
+
+<div class="history_back">
+<a href="https://nightworks.jp" class="form historyback">前のページへ戻る</a>
+</div>
+
+									<span class="cart-button"><?php usces_the_itemSkuButton( '&#xf00c;&nbsp;&nbsp;' . __('このプランを申し込む', 'usces' ), 0 ); ?></span>
+								</div>
+								<?php endif; ?>
+
+							</div><!-- .skuform -->
+						<?php } while ( usces_have_skus() ); ?>
+
+							<?php do_action( 'usces_action_single_item_inform' ); ?>
+						</form>
+						<?php do_action( 'usces_action_single_item_outform' ); ?>
+
+					</div><!-- .item-info -->
+
+					<?php usces_assistance_item( $post->ID, __('An article concerned', 'usces') ); ?>
+
+				</div><!-- #itemspage -->
+			</div><!-- .storycontent -->
+
+		</article>
+
+	<?php else: ?>
+		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<?php endif; ?>
+
+	</div><!-- #content -->
+</div><!-- #primary -->
+</section>
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+
+<?php endswitch; ?>

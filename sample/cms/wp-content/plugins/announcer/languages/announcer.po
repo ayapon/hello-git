@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Announcer\n"
+"POT-Creation-Date: 2014-05-06 21:38+0530\n"
+"PO-Revision-Date: 2014-05-06 21:39+0530\n"
+"Last-Translator: Aakash Chakravarthy <aakash.19493@gmail.com>\n"
+"Language-Team: Aakash Chakravarthy <aakash.19493@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../announcer.php:463
+msgid "Announcement updated successfully !!"
+msgstr ""
+
+#: ../announcer.php:467
+msgid "Announcement created successfully"
+msgstr ""
+
+#: ../announcer.php:471
+msgid "Announcement deleted successfully"
+msgstr ""
+
+#: ../admin/edit-list.php:32 ../admin/edit-single.php:15
+msgid "Active"
+msgstr ""
+
+#: ../admin/edit-list.php:34 ../admin/edit-single.php:17
+msgid " Inactive"
+msgstr ""
+
+#: ../admin/edit-list.php:48 ../admin/edit-single.php:207
+#: ../admin/temp/edit-single - Copy (2).php:151 (3).php:148 Copy.php:146
+msgid "Border Color"
+msgstr ""
+
+#: ../admin/edit-list.php:49 ../admin/edit-single.php:212
+#: ../admin/temp/edit-single - Copy (2).php:156 (3).php:153 Copy.php:151
+msgid "Background Color"
+msgstr ""
+
+#: ../admin/edit-list.php:50 ../admin/edit-single.php:217
+#: ../admin/temp/edit-single - Copy (2).php:161 (3).php:158 Copy.php:156
+msgid "Text Color"
+msgstr ""
+
+#: ../admin/edit-single.php:20
+msgid "Edit Announcement: "
+msgstr ""
+
+#: ../admin/edit-single.php:20
+msgid "Delete"
+msgstr ""
+
+#: ../admin/edit-single.php:24 ../admin/edit-single.php:28
+msgid "Create an Announcement"
+msgstr ""
+
+#: ../admin/edit-single.php:42
+msgid "Back"
+msgstr ""
+
+#: ../admin/edit-single.php:46 ../admin/temp/edit-single - Copy (2).php:34
+#: (3).php:32 Copy.php:32
+msgid "Name"
+msgstr ""
+
+#: ../admin/edit-single.php:48
+msgid "Identification name. Will not be displayed in the announcement"
+msgstr ""
+
+#: ../admin/edit-single.php:53 ../admin/temp/edit-single - Copy (2).php:39
+#: (3).php:37 Copy.php:37
+msgid "Announcement"
+msgstr ""
+
+#: ../admin/edit-single.php:58 ../admin/temp/edit-single - Copy (2).php:44
+#: (3).php:42 Copy.php:42
+msgid "Show Announcement"
+msgstr ""
+
+#: ../admin/edit-single.php:61 ../admin/edit-single.php:83
+#: ../admin/temp/edit-single - Copy (2).php:47 (2).php:63 (3).php:45
+#: (3).php:61 Copy.php:45 Copy.php:61
+msgid "Yes"
+msgstr ""
+
+#: ../admin/edit-single.php:62 ../admin/edit-single.php:84
+#: ../admin/temp/edit-single - Copy (2).php:48 (2).php:64 (3).php:46
+#: (3).php:62 Copy.php:46 Copy.php:62
+msgid "No"
+msgstr ""
+
+#: ../admin/edit-single.php:68
+msgid "Show this announcement in the time range"
+msgstr ""
+
+#: ../admin/edit-single.php:73
+msgid "Set a longer \"to\" date to the keep announcement always on"
+msgstr ""
+
+#: ../admin/edit-single.php:79 ../admin/temp/edit-single - Copy (2).php:59
+#: (3).php:57 Copy.php:57
+msgid "Show close button"
+msgstr ""
+
+#: ../admin/edit-single.php:91 ../admin/temp/edit-single - Copy (2).php:71
+#: (3).php:69 Copy.php:69
+msgid "Announcement position"
+msgstr ""
+
+#: ../admin/edit-single.php:116
+msgid "Function to use in your theme:"
+msgstr ""
+
+#: ../admin/edit-single.php:118
+msgid "Please save to obtain announcement ID"
+msgstr ""
+
+#: ../admin/edit-single.php:129 ../admin/temp/edit-single - Copy (2).php:88
+#: (3).php:86 Copy.php:86
+msgid "Location rules"
+msgstr ""
+
+#: ../admin/edit-single.php:134 ../admin/temp/edit-single - Copy (2).php:93
+#: (3).php:91 Copy.php:91
+msgid "Select pages to display the announcement"
+msgstr ""
+
+#: ../admin/edit-single.php:140
+msgid "No rules added. Announcement will be displayed site wide."
+msgstr ""
+
+#: ../admin/edit-single.php:141
+msgid "Show this announcement to"
+msgstr ""
+
+#: ../admin/edit-single.php:167
+msgid "Add another page"
+msgstr ""
+
+#: ../admin/edit-single.php:173 ../admin/temp/edit-single - Copy (2).php:119
+#: (3).php:116 Copy.php:114
+msgid "Themes and Effects"
+msgstr ""
+
+#: ../admin/edit-single.php:178 ../admin/temp/edit-single - Copy (2).php:124
+#: (3).php:121 Copy.php:119
+msgid "Box Style"
+msgstr ""
+
+#: ../admin/edit-single.php:202 ../admin/temp/edit-single - Copy (2).php:146
+#: (3).php:143 Copy.php:141
+msgid "Custom Class"
+msgstr ""
+
+#: ../admin/edit-single.php:222
+msgid "Additional Class names"
+msgstr ""
+
+#: ../admin/edit-single.php:224
+msgid "Additional class name for styling"
+msgstr ""
+
+#: ../admin/edit-single.php:228 ../admin/temp/edit-single - Copy (2).php:166
+#: (3).php:163 Copy.php:161
+msgid "Intro effect"
+msgstr ""
+
+#: ../admin/edit-single.php:234 ../admin/temp/edit-single - Copy (2).php:172
+#: (3).php:169 Copy.php:167
+msgid "No effect"
+msgstr ""
+
+#: ../admin/edit-single.php:241 ../admin/temp/edit-single - Copy (2).php:179
+#: (3).php:176 Copy.php:174
+msgid "Effect Duration"
+msgstr ""
+
+#: ../admin/edit-single.php:243
+msgid "in seconds"
+msgstr ""
+
+#: ../admin/edit-single.php:254
+msgid "Update"
+msgstr ""
+
+#: ../admin/temp/edit-single - Copy (2).php:54 (3).php:52 Copy.php:52
+msgid "Expiry Date"
+msgstr ""
+
+#: ../admin/temp/edit-single - Copy (3).php:103
+msgid ""
+"<p class=\"rule-info\">No rules added. Announcement will be displayed site "
+"wide.</p>"
+msgstr ""

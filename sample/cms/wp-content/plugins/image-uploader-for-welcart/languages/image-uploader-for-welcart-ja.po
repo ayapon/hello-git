@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Image Uploader for Welcart\n"
+"POT-Creation-Date: 2017-03-24 15:15+0900\n"
+"PO-Revision-Date: 2017-03-24 15:37+0900\n"
+"Last-Translator: \n"
+"Language-Team: web.contempo.jp <wordpress@contempo.jp>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+msgid "Product images"
+msgstr "商品画像"
+
+msgid "Sort it in any order"
+msgstr "お好きな順に並べ替えて下さい"
+
+msgid "Remove this image from the list"
+msgstr "この画像をリストから削除する"
+
+msgid "Add Images"
+msgstr "画像を追加"
+
+msgid "Editor View"
+msgstr "エディター表示"
+
+msgid "Block View"
+msgstr "ブロック表示"
+
+msgid "Upload product images"
+msgstr "商品画像をアップロード"
+
+msgid "'Image Uploader for Welcart' requires 'Welcart e-Commerce plugin'."
+msgstr "「Image Uploader for Welcart」が動作するには「Welcart e-Commerce plugin」が必要です。"
+
+msgid "Create metabox with image uploader for Welcart. It allows uploading and sorting images directory from each edit page."
+msgstr "ECサイト制作プラグインWelcart（ウェルカート）専用の画像アップローダーを設置します。各投稿（商品）編集ページから画像をアップしたり並べ替えたりすることができます。"

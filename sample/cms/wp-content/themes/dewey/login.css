@@ -1,0 +1,6 @@
+html body.login div#login h1 a {
+	background: url(images/logo_b.svg) no-repeat center center;
+	background-size:auto 100%;
+	width: 320px;
+	height: 55px;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/../keni_next/wordpress/wp-includes" />
+      <path value="$PROJECT_DIR$/../keni_next/wordpress/wp-admin" />
+      <path value="$PROJECT_DIR$/../keni_next/wordpress/wp-content/plugins/usc-e-shop" />
+    </include_path>
+  </component>
+</project>

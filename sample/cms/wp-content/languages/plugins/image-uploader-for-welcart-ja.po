@@ -1,0 +1,72 @@
+# Translation of Plugins - Image Uploader for Welcart - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Image Uploader for Welcart - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-24 06:57:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Image Uploader for Welcart - Stable (latest release)\n"
+
+#: image-uploader-for-welcart.php:82
+msgid "Add Images"
+msgstr "画像を追加"
+
+#: image-uploader-for-welcart.php:298
+msgid "Title"
+msgstr "タイトル"
+
+#: image-uploader-for-welcart.php:84
+msgid "Block View"
+msgstr "ブロック表示"
+
+#: image-uploader-for-welcart.php:83
+msgid "Editor View"
+msgstr "エディター表示"
+
+#: image-uploader-for-welcart.php:71 image-uploader-for-welcart.php:242
+msgid "Caption"
+msgstr "キャプション"
+
+#: image-uploader-for-welcart.php:71 image-uploader-for-welcart.php:242
+msgid "Alt Text"
+msgstr "代替テキスト"
+
+#. Author URI of the plugin/theme
+msgid "http://web.contempo.jp/"
+msgstr "http://web.contempo.jp/"
+
+#. Author of the plugin/theme
+msgid "Mizuho Ogino"
+msgstr "Mizuho Ogino"
+
+#. Description of the plugin/theme
+msgid "Create metabox with image uploader for Welcart. It allows uploading and sorting images directory from each edit page."
+msgstr "ECサイト制作プラグインWelcart（ウェルカート）専用の画像アップローダーを設置します。各投稿（商品）編集ページから画像をアップしたり並べ替えたりすることができます。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://web.contempo.jp/weblog/tips/p636"
+msgstr "http://web.contempo.jp/weblog/tips/p636"
+
+#. Plugin Name of the plugin/theme
+msgid "Image Uploader for Welcart"
+msgstr "Image Uploader for Welcart"
+
+#: image-uploader-for-welcart.php:199
+msgid "Upload Product Images"
+msgstr "商品画像をアップロード"
+
+#: image-uploader-for-welcart.php:69 image-uploader-for-welcart.php:240
+msgid "Remove this image from the list"
+msgstr "この画像をリストから削除"
+
+#: image-uploader-for-welcart.php:67
+msgid "Sort it in any order"
+msgstr "お好きな順に並べ替えて下さい"
+
+#: image-uploader-for-welcart.php:40
+msgid "Product Images"
+msgstr "商品画像"

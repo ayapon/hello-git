@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media print {
+  section { display: block; page-break-before: always; }
+  pre code {page-break-after: always;}
+  @page {
+margin-top:0.4cm;
+margin: 0.5cm;
+}
+p a, code, pre {
+word-wrap: break-word;
+}
+img {display:none;}
+ 
+pre a[href]:after {
+    content: ""; }
+ 
+ 
+pre abbr[title]:after {
+    content: ""; }
+ 
+pre   .ir a:after,
+  pre a[href^="javascript:"]:after,
+  pre a[href^="#"]:after {
+    content: ""; }
+ 
+.no-print {display:none;}
+ 
+}

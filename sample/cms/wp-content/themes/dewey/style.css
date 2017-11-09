@@ -1,0 +1,136 @@
+/*
+Theme Name: DEWEY
+Theme URI: http://www.dewey.co.jp
+Description: 
+Author: DEWEY Inc.
+Tags: 
+Version: 0.1.0
+*/
+@import url("/css/font-awesome.min.css");
+@import url("/css/animate.css");
+@import url("/css/bootstrap.min.css");
+@import url("/css/main.css");
+
+body.home div.main-image {
+	text-align: center;
+}
+body.home div.main-image img {
+	max-width: 100%;
+	height: auto;
+}
+/* .mouse-icon {
+	margin: -140px auto 50px;
+} */
+/* welcart */
+div.item-info form div.skuform div.field div.field_price {
+	font-size: 2em;
+}
+span.permonth {
+	font-weight: normal;
+	font-size: 0.8em;
+}
+#wc_delivery .customer_form dl dt {
+	padding: 1em 0 0 0;
+}
+#wc_delivery .customer_form dl dt label {
+	margin: 0 0 0.5em 0;
+}
+div#delivery-info form table#time.customer_form tbody tr td dl dt label input[type="radio"] {
+	width:			20px;
+	height:			20px;
+	-moz-transform:		scale(1.2);
+	-webkit-transform:	scale(1.2);
+	transform:		scale(1.2);
+	margin-right: 0.3em;
+}
+
+#cart table#cart_table tbody tr td.productname, #cart table#cart_table tbody tr td.subtotal {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+form .customer_form tr.inp1 input {
+	width: 98%;
+}
+form input#zipcode {
+	width: 30%;
+	min-width: 150px;
+}
+div.agree_member_area {
+	width: 100%;
+}
+div.agree_member_area textarea {
+	height: 300px;
+}
+div.agree_member_area div.at_check_area input#agree_member_check.at_check {
+	width:			24px;
+	height:			24px;
+	-moz-transform:		scale(1.4);
+	-webkit-transform:	scale(1.4);
+	transform:		scale(1.4);
+}
+div.error_message {
+	color: #ff0000;
+}
+#itempage div.error_message {
+	margin: 0 auto 20px;
+	padding: 5px 0 0 0;
+	text-align: center;
+/* 	background: #eee; */
+	font-weight: bold;
+}
+#toTop {
+	float: right;
+	margin: 8px 10px 0 0;
+}
+#toTop i {
+	color: #888;
+}
+#toTop i:hover {
+	color: #444;
+}
+
+/* inCart */
+li.features.btn {
+	padding: 0;
+}
+li.features.btn form input.skubutton {
+	width: 100%;
+	border-radius: 0;
+	font-size: 1.6em;
+	padding: 18px;
+}
+li.features.btn form input.skubutton::before {
+    -webkit-animation:blink 1.0s ease-in-out infinite alternate;
+    -moz-animation:blink 1.0s ease-in-out infinite alternate;
+    animation:blink 1.0s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0.4;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0.4;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0.4;}
+    100% {opacity:1;}
+}
+
+/* https://nightworks.jp/faq/sppass */
+#sppass div.entry-content h3.widget-title {
+	font-weight: bold;
+}
+#sppass div.entry-content hr {
+	margin-bottom: 40px;
+}
+#sppass div.entry-content img {
+	max-width: 100%;
+	height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	li.features.btn form input.skubutton {
+		font-size: 1.2em;
+	}
+
+}

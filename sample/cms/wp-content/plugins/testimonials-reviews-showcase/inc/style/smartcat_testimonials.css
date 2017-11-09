@@ -1,0 +1,780 @@
+/* 
+    Document   : smartcat_testimonials
+    Created on : Jun 23, 2014, 7:07:26 PM
+    Author     : Bilal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.center{ text-align: center; }
+
+#smartcat_testimonials a{ text-decoration: none; border-bottom: 0;}
+.smartcat_testimonial .smartcat_testimonial_title a{ text-decoration: none;}
+
+#smartcat_testimonials_lightbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0,0,0,0.75);
+    display: none;
+}
+
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
+
+/*---- SLIDER TEMPLATE ------*/
+#smartcat-testimonials.smartcat_slider_template .smartcat-testimonial-image{
+    
+    text-align: center;
+}
+
+#smartcat-testimonials.smartcat_slider_template .smartcat-testimonial-image .wp-post-image{
+    float: none;
+}
+
+
+/*--------- END SLIDER TEMPLATE ---------*/
+
+
+/*--------- SLIDER 2 TEMPLATE ---------*/
+#smartcat-testimonials.smartcat_slider2_template .smartcat_testimonials_content{
+    margin: 0;
+}
+#smartcat-testimonials.smartcat_slider2_template .smartcat-testimonial{
+    overflow: hidden;
+}
+#smartcat-testimonials.smartcat_slider2_template .smartcat-testimonial:nth-child(1){
+    padding-top: 0;
+}
+/*--------- END SLIDER TEMPLATE ---------*/
+
+
+/*--------- SLIDER 3 TEMPLATE ---------*/
+#smartcat-testimonials.smartcat_slider3_template .smartcat_testimonials_content{
+    margin: 0;
+}
+#smartcat-testimonials.smartcat_slider3_template .smartcat-testimonial{
+    overflow: hidden;
+    
+}
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box{
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    position: relative;
+    background: #F5F5F5;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+}
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box.show-images{
+    margin-left: 0;
+}
+
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box:after,
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box:before{
+    right: 100%;
+    top: 18%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;    
+}
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box:after{
+    border-color: rgba(245, 245, 245, 0);
+    border-right-color: #F5F5F5;
+    border-width: 10px;
+    margin-top: -10px;    
+}
+#smartcat-testimonials.smartcat_slider3_template .testimonial-box:before{
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #ddd;
+    border-width: 13px;
+    margin-top: -13px;    
+}
+
+@media( max-width: 768px ) {
+    
+    #smartcat-testimonials.smartcat_slider3_template .testimonial-box{
+        margin-top: 20px;
+    }
+    #smartcat-testimonials.smartcat_slider3_template .testimonial-box:after,
+    #smartcat-testimonials.smartcat_slider3_template .testimonial-box:before{
+        display: none;
+    }
+    
+    
+}
+
+
+/*--------- END SLIDER 3 TEMPLATE ---------*/
+
+
+
+
+/*--------- Bubbles List TEMPLATE ---------*/
+#smartcat-testimonials.smartcat_conversation_list_template .smartcat_testimonials_content{
+    margin: 0;
+}
+#smartcat-testimonials.smartcat_conversation_list_template .smartcat-testimonial{
+    overflow: hidden;
+    margin: 0 0 25px 0;
+    
+}
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box{
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    position: relative;
+    background: #F5F5F5;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+}
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box.show-images{
+    margin-left: 0;
+}
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:after,
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:before{
+    right: 100%;
+    top: 18%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;    
+}
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:after{
+    border-color: rgba(245, 245, 245, 0);
+    border-right-color: #F5F5F5;
+    border-width: 10px;
+    margin-top: -10px;    
+}
+#smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:before{
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #ddd;
+    border-width: 13px;
+    margin-top: -13px;
+}
+
+@media( max-width: 768px ) {
+    
+    #smartcat-testimonials.smartcat_conversation_list_template .testimonial-box{
+        margin-top: 20px;
+    }
+    #smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:after{
+        display: none;
+    }
+    #smartcat-testimonials.smartcat_conversation_list_template .testimonial-box:before{
+        display: none;
+    }
+    
+    
+}
+
+
+
+
+/*--------- END Bubbles List TEMPLATE ---------*/
+
+
+
+/*------- CENTERED LIST ----------------*/
+#smartcat-testimonials.smartcat_centered_list_template .smartcat-testimonial{
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #818181;
+    padding-bottom: 20px;
+}
+
+#smartcat-testimonials.smartcat_centered_list_template .smartcat-testimonial{
+    padding-top: 20px;
+}
+
+#smartcat-testimonials.smartcat_centered_list_template .smartcat-testimonial:nth-child(1){
+    padding-top: 0;
+}
+
+/*------- END CENTERED LIST ----------------*/
+
+
+/*------------- Stacked List ----------*/
+#smartcat-testimonials.smartcat_stacked_list_template .smartcat_testimonials_content{
+    margin: 0;
+}
+#smartcat-testimonials.smartcat_stacked_list_template .smartcat-testimonial{
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px dashed #818181;
+}
+#smartcat-testimonials.smartcat_stacked_list_template .smartcat-testimonial:nth-child(1){
+    padding-top: 0;
+}
+/*------------- End Stacked List ----------*/
+
+/*------------- GRID TEMPLATE ----------*/
+#smartcat-testimonials.smartcat_grid_template .smartcat_testimonials_content{
+    margin: 0;
+}
+#smartcat-testimonials.smartcat_grid_template .smartcat-testimonial{
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+#smartcat-testimonials.smartcat_grid_template .smartcat-testimonial .wp-post-image{
+    float: none;
+}
+
+
+/*------------- BOXED TEMPLATE ----------*/
+
+#smartcat-testimonials.smartcat_boxed_template{
+    padding: 15px;
+    border: 1px solid #333;
+}
+
+#smartcat-testimonials.smartcat_boxed_template .smartcat-testimonial{
+    overflow: hidden;
+
+}
+
+#smartcat-testimonials.smartcat_boxed_template .smartcat-testimonial .testimonial-box{
+
+}
+
+#smartcat-testimonials.smartcat_boxed_template .owl-controls{
+    /*display: none !important;*/
+}
+
+/*------------- END BOXED TEMPLATE ----------*/
+
+
+
+
+/*------ GENERAL RULES ------------*/
+
+#smartcat-testimonials{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#smartcat-testimonials .smartcat_testimonials_content{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 5px 0;
+}
+
+#smartcat-testimonials .smartcat_testimonials_content .icon-quote-left,
+#smartcat-testimonials .smartcat_testimonials_content .icon-quote-right{
+    display: none;
+}
+#smartcat-testimonials .smartcat_testimonials_content .icon-quote-right{
+    
+}
+
+#smartcat-testimonials .smartcat_testimonials_content.italic{
+    font-style: italic;
+}
+#smartcat-testimonials a{
+    text-decoration: none;
+    color: #000;
+    border: none;
+}
+#smartcat-testimonials .smartcat_testimonial_title{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#smartcat-testimonials .smartcat_testimonial_subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+#smartcat-testimonials .smartcat_testimonial_subtitle a{
+    text-decoration: none;
+}
+.smartcat-testimonial-image .wp-post-image{
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+}
+.smartcat-testimonial-image.circle .wp-post-image{
+    border-radius: 100%;
+}
+.smartcat-testimonial-image.softedge .wp-post-image{
+    border-radius: 15px;
+}
+.smartcat-testimonial-image.default .wp-post-image{
+    width: 125px;
+    float: none;
+}
+.smartcat-testimonial-image.smaller .wp-post-image{
+    width: 75px;
+    height: 75px;    
+}
+.smartcat-testimonial-image.larger .wp-post-image{
+    width: 175px;
+    height: 175px;    
+}
+.smartcat-testimonial-image.grayscale .wp-post-image{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%)
+}
+/*.smartcat-testimonial-image.grayscale .wp-post-image:hover{
+    filter: initial;
+    -webkit-filter: initial;
+    -moz-filter: initial;
+}*/
+#smartcat-testimonials .smartcat-testimonial:hover .smartcat-testimonial-image.grayscale .wp-post-image{
+    filter: initial;
+    -webkit-filter: initial;
+    -moz-filter: initial;    
+}
+#smartcat-testimonials .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #f5f5f5; 
+    position: absolute;
+    left: -10px;
+}
+/*----------- END GENERAL RULES ----------*/
+
+
+
+/*----------- FORMS ----------------------*/
+
+.smartcat_testimonials_form{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.smartcat_testimonials_form .form-group{
+    margin-bottom: 15px;
+}
+
+.smartcat_testimonials_form .testimonial-rating-icon{
+    color: #FFDA01;
+}
+
+.smartcat_testimonials_form .testimonial-rating-icon:hover{
+    color: #FFDA01;
+}
+
+.smartcat_testimonials_form .wp-editor-container textarea.wp-editor-area{
+    background: #F1F1F1;
+    border-right: 1px #f1f1f1;
+}
+
+.smartcat_testimonials_form label{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.smartcat_testimonials_form input[type=text]{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: rgb(85, 85, 85);
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;    
+}
+.smartcat_testimonials_form input[type=text].smaller-input{
+    width: 60px;
+    display: inline-block;
+}
+.smartcat_testimonials_form input[type=text]:focus{
+  border-color: rgb(102, 175, 233);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.smartcat_testimonials_danger{
+    color: rgb(169, 68, 66);
+    background: #F2DEDE;
+    border-color: rgb(235, 204, 209);
+    margin: 0 0 10px 0;
+    padding: 15px;
+}
+
+.smartcat_testimonials_success{
+    color: rgb(60, 118, 61);
+    background-color: rgb(223, 240, 216);
+    border-color: rgb(214, 233, 198);
+    margin: 0 0 10px 0;
+    padding: 15px;
+}
+
+/**
+* Grid CSS
+*/
+@media (min-width: 768px) {
+  .sc-col-sm-1, .sc-col-sm-2, .sc-col-sm-3, .sc-col-sm-4, .sc-col-sm-5, .sc-col-sm-6, .sc-col-sm-7, .sc-col-sm-8, .sc-col-sm-9, .sc-col-sm-10, .sc-col-sm-11, .sc-col-sm-12 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;    
+    box-sizing: border-box;
+  }
+  .sc-col-sm-12 {
+    width: 100%;
+  }
+  .sc-col-sm-11 {
+    width: 91.66666667%;
+  }
+  .sc-col-sm-10 {
+    width: 83.33333333%;
+  }
+  .sc-col-sm-9 {
+    width: 75%;
+  }
+  .sc-col-sm-8 {
+    width: 66.66666667%;
+  }
+  .sc-col-sm-7 {
+    width: 58.33333333%;
+  }
+  .sc-col-sm-6 {
+    width: 50%;
+  }
+  .sc-col-sm-5 {
+    width: 41.66666667%;
+  }
+  .sc-col-sm-4 {
+    width: 33.33333333%;
+  }
+  .sc-col-sm-3 {
+    width: 25%;
+  }
+  .sc-col-sm-2 {
+    width: 16.66666667%;
+  }
+  .sc-col-sm-1 {
+    width: 8.33333333%;
+  }
+}
+@media( max-width: 768px ){
+
+    
+}

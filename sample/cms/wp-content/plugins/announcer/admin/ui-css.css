@@ -1,0 +1,266 @@
+.wrap h2{
+	padding: 10px 0;
+}
+.cnt-wrap{
+	margin: 20px 0;
+}
+
+.cnt-left{
+	float: left;
+	width: 100%;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin-right: -320px;
+	padding-right: 320px;
+}
+
+.cnt-right{
+	float: right;
+	width: 300px;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.side-widget{
+	background: #fff;
+	margin: 0 0 20px 0;
+	padding: 11px 20px;
+	position: relative;
+}
+.side-widget a{
+	color: #000;
+	text-decoration: none;
+}
+
+.ancr-table > tbody > tr > td {
+    padding: 20px;
+	background: #fff;
+}
+.ancr-table > tbody > tr > td:first-child {
+    background: #F8F8F8;
+    border-right: 1px solid #e7e7e7;
+}
+.ancr-table > tbody > tr > td {
+    border-bottom: 1px solid #E7E7E7;
+	vertical-align: top;
+}
+.ancr-edit-foot{
+	margin: 40px 0;
+	text-align: right;
+}
+.ancr-edit-foot input{
+	width: 30%;
+}
+.ancr-list-table tfoot td{
+	border-top: 1px solid #e1e1e1;
+	padding: 25px;
+}
+.ancr-list-table tbody td{
+	padding-top: 15px;
+}
+.row-actions{
+	margin: 10px 0;
+}
+.row-actions > span{
+	padding-right: 20px;
+}
+.ancr-list-id{
+	display: block;
+	text-align: center;
+}
+.ancr-list-status{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+.single-edit-title{
+	margin: 5px 0;
+}
+.ancr-single-info{
+	float: right;
+}
+.ancr-single-status{
+	font-size: 13px;
+	padding: 0 15px 0 0;
+	line-height: 2;
+}
+.single-back{
+	float: left;
+	margin: 0 15px 0 0 !important;
+}
+
+.rule-wrap{
+	margin: 10px 0;
+	position: relative;
+}
+.rule-wrap select, .rule-wrap input{
+	margin: 0 20px 0 0;
+	vertical-align: middle;
+	font-size: 13px;
+	box-shadow: none;
+	padding: 0 3px;
+	line-height: 2;
+}
+.rule-wrap .rule-remove{
+	position: absolute;
+	right:0;
+	top: 0;
+	display: none;
+}
+
+.rule-wrap:last-child{
+	margin: 10px 0 0 0;
+}
+.rule-wrap:hover .rule-remove{
+	display:inline-block;
+}
+.rule-wrap .rule-add{
+	visibility: hidden;
+}
+.rule-wrap:last-child .rule-add{
+	visibility: visible;
+}
+.rule-wrap:after{
+	content: '+';
+	position: absolute;
+	left: -20px;
+	bottom: -17px;
+	color: #000;
+	font-weight: bold;
+}
+
+.rule-wrap:last-child:after{
+	display: none;
+}
+.rule-head{
+	font-weight: bold;
+	margin: 0 0 20px 0 !important;
+}
+.group-wrap{
+	margin: 0 0 30px 0;
+	padding: 0 0 30px 30px;
+	border-bottom:1px solid #e1e1e1;
+	position: relative;
+}
+.group-wrap:after {
+	content: 'and   ';
+	display: inline-block;
+	position: absolute;
+	bottom: -11px;
+	background: #fff;
+	padding: 0 15px 0 0;
+	left: 0;
+}
+.group-wrap:last-child{
+	border: none;
+	padding-bottom: 0;
+}
+.group-wrap:last-child:after{
+	display: none;
+}
+.loc-temp-box{
+	display: none;
+}
+.ancr-manualcode{
+	display: none;
+}
+.tt-table td{
+	padding:0;
+}
+.wp-picker-holder {
+	position: absolute;
+	z-index: 99;
+}
+.cpreview{
+	width: 48px;
+	height: 10px;
+	display: inline-block;
+	margin: 0 -2px 0;
+	background: url( 'images/grey-dots.gif' );
+}
+.cpreview:hover{
+	box-shadow: 0 0 1px #000;
+	-webkit-transform: scale( 1.3 );
+	-moz-transform: scale( 1.3 );
+	transform: scale( 1.3 );
+}
+.amtBox{
+	font-size: 18px;
+	line-height: 2;
+	height: auto !important;
+	width: 100px;
+	margin: 0 0 10px 0;
+}
+.amtBtn{
+	float: right;
+	width: 100px;
+	margin: -6px 0 0 0;
+}
+.shareBtn{
+	float: right;
+	margin: 10px 0 0 0;
+	position: relative;
+	padding: 10px 10px 10px 15px;
+}
+.shareBtn:after{
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background: url( 'images/down-arrow.png' ) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.shareBtn:hover{
+	background: #fff;
+}
+.shareBtn:hover .shareExp{
+	display: block;
+}
+.shareExp{
+	position: absolute;
+	background: #FFF;
+	z-index: 9999;
+	display: none;
+	width: 210px;
+	right: 0;
+	padding: 10px 20px 20px;
+	box-shadow: 0 2px 2px #CCC;
+}
+.addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m {
+	padding: 0 15px 0 0 !important; 
+}
+.smallText{
+	font-size: 10px;
+}
+.gray{
+	color: #999;
+}
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+.float-right{
+	float: right;
+}
+.clearfix:after{
+	clear:both;
+	content:" ";
+	display:block;
+	visibility:hidden;
+}
+
+@media (max-width: 1100px) {
+	.cnt-left{
+		float: none;
+		margin-right:0;
+		padding-right: 10px;
+	}
+	.cnt-right{
+		width: 100%;
+		float: none;
+		padding-right: 10px;
+	}
+}

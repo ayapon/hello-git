@@ -1,0 +1,210 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Announcer\n"
+"POT-Creation-Date: 2016-12-28 17:15+0900\n"
+"PO-Revision-Date: 2016-12-28 17:54+0900\n"
+"Last-Translator: DEWEY Inc. <info@dewey.co.jp>\n"
+"Language-Team: DEWEY Inc. <info@dewey.co.jp>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: announcer.php\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "No name"
+msgstr "サンプル"
+
+#: admin/edit-list.php:10
+msgid "ID"
+msgstr "ID"
+
+#: admin/edit-list.php:11 admin/edit-single.php:46
+msgid "Name"
+msgstr "タイトル"
+
+#: admin/edit-list.php:12 admin/edit-single.php:53
+msgid "Announcement"
+msgstr "お知らせ"
+
+#: admin/edit-list.php:13
+msgid "Status"
+msgstr "ステータス"
+
+#: admin/edit-list.php:70
+msgid "Create New Announcement"
+msgstr "新規お知らせを作成"
+
+#: admin/edit-list.php:32 admin/edit-single.php:15
+msgid "Active"
+msgstr "有効"
+
+#: admin/edit-list.php:34 admin/edit-single.php:17
+msgid " Inactive"
+msgstr "無効"
+
+#: admin/edit-list.php:48 admin/edit-single.php:207
+msgid "Border Color"
+msgstr "罫線の色"
+
+#: admin/edit-list.php:49 admin/edit-single.php:212
+msgid "Background Color"
+msgstr "背景色"
+
+#: admin/edit-list.php:50 admin/edit-single.php:217
+msgid "Text Color"
+msgstr "文字の色"
+
+#: admin/edit-single.php:20
+msgid "Edit Announcement: "
+msgstr "お知らせの編集"
+
+#: admin/edit-list.php:46 #: admin/edit-single.php:20
+msgid "Delete"
+msgstr "削除"
+
+#: admin/edit-single.php:24 admin/edit-single.php:28
+msgid "Create an Announcement"
+msgstr "お知らせを作成"
+
+#: admin/edit-single.php:42
+msgid "Back"
+msgstr "戻る"
+
+#: admin/edit-single.php:48
+msgid "Identification name. Will not be displayed in the announcement"
+msgstr "識別名。お知らせでは表示されません"
+
+#: admin/edit-single.php:58
+msgid "Show Announcement"
+msgstr "お知らせの表示"
+
+#: admin/edit-single.php:61 admin/edit-single.php:83
+msgid "Yes"
+msgstr "はい"
+
+#: admin/edit-single.php:62 admin/edit-single.php:84
+msgid "No"
+msgstr "いいえ"
+
+#: admin/edit-single.php:68
+msgid "Show this announcement in the time range"
+msgstr "時間内でこのお知らせを表示"
+
+#: admin/edit-single.php:73
+msgid "Set a longer \"to\" date to the keep announcement always on"
+msgstr "常にお知らせを表示するにはより長い日を設定します。"
+
+#: admin/edit-single.php:79
+msgid "Show close button"
+msgstr "閉じるボタンを表示"
+
+#: admin/edit-single.php:91
+msgid "Announcement position"
+msgstr "お知らせの表示位置"
+
+#: admin/edit-single.php:116
+msgid "Function to use in your theme:"
+msgstr "テーマで使用するように機能します："
+
+#: admin/edit-single.php:118
+msgid "Please save to obtain announcement ID"
+msgstr "アナウンスメントIDを取得するために保存してください"
+
+#: admin/edit-single.php:129
+msgid "Location rules"
+msgstr "場所のルール"
+
+#: admin/edit-single.php:134
+msgid "Select pages to display the announcement"
+msgstr "お知らせを表示するページを選択"
+
+#: admin/edit-single.php:140
+msgid "No rules added. Announcement will be displayed site wide."
+msgstr "ルールが追加されていません。お知らせはサイト全体で表示されます。"
+
+#: admin/edit-single.php:141
+msgid "Show this announcement to"
+msgstr "このお知らせを表示"
+
+#: admin/edit-single.php:167
+msgid "Add another page"
+msgstr "別のページを追加"
+
+#: admin/edit-single.php:173
+msgid "Themes and Effects"
+msgstr "テーマとエフェクト"
+
+#: admin/edit-single.php:178
+msgid "Box Style"
+msgstr "ボックススタイル"
+
+#: admin/edit-single.php:202
+msgid "Custom Class"
+msgstr "カスタムクラス"
+
+#: admin/edit-single.php:222
+msgid "Additional Class names"
+msgstr "追加のクラス名"
+
+#: admin/edit-single.php:224
+msgid "Additional class name for styling"
+msgstr "スタイリングのための追加のクラス名"
+
+#: admin/edit-single.php:228
+msgid "Intro effect"
+msgstr "イントロ効果"
+
+#: admin/edit-single.php:234
+msgid "No effect"
+msgstr "効果なし"
+
+#: admin/edit-single.php:241
+msgid "Effect Duration"
+msgstr "効果持続時間"
+
+#: admin/edit-single.php:243
+msgid "in seconds"
+msgstr "秒"
+
+#: admin/edit-single.php:254
+msgid "Update"
+msgstr "更新"
+
+#: announcer.php:468
+msgid "Announcement updated successfully !!"
+msgstr "お知らせの更新に成功しました！"
+
+#: announcer.php:472
+msgid "Announcement created successfully"
+msgstr "おしらせの作成に成功しました"
+
+#: announcer.php:476
+msgid "Announcement deleted successfully"
+msgstr "お知らせの削除に成功しました"
+
+#. Plugin Name of the plugin/theme
+msgid "Announcer"
+msgstr "お知らせ"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.aakashweb.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Display multiple Announcements, Welcome notes, Greetings, Events, News etc with attractive style, colors, themes and position it anywhere in the page. <a href=\"http://www.youtube.com/watch?v=WTLHuoY0mM0\" title=\"Announcer demo video\" target=\"_blank\">Check out the demo video</a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Aakash Chakravarthy"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.aakashweb.com/"
+msgstr ""

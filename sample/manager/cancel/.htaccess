@@ -1,0 +1,12 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+# AccessControl referer
+#SetEnvIf Referer "^https://nightworks\.jp\/usces-member" chk_url
+#SetEnvIf Referer "^https://nightworks\.jp\/usces-member\/" chk_url
+
+order deny,allow
+deny from all
+allow from env=chk_url
+allow from 203.141.137.233

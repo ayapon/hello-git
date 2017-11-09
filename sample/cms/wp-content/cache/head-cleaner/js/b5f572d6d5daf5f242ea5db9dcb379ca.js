@@ -1,0 +1,3 @@
+$(document).ready(function(){(function(){var ans;var bs=false;var ref=document.referrer;$(window).bind("unload beforeunload",function(){bs=true;});re=new RegExp(location.hostname,"i");if(ref.match(re)){ans=true;}else{ans=false;}
+$('.historyback').bind("click",function(){var that=this;if(ans){history.back();setTimeout(function(){if(!bs){location.href=$(that).attr("href");}},100);}else{location.href=$(this).attr("href");}
+return false;});})();});

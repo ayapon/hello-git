@@ -1,0 +1,10 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+# AccessControl referer
+SetEnvIf Referer "^https://nightworks.jp" chk_url
+# SetEnvIf Referer "^$" chk_url
+order deny,allow
+deny from all
+allow from env=chk_url
